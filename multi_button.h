@@ -24,6 +24,7 @@ typedef enum {
 	PRESS_REPEAT,
 	SINGLE_CLICK,
 	DOUBLE_CLICK,
+	FIVE_CLICK,
 	LONG_PRESS_START,
 	LONG_PRESS_HOLD,
 	number_of_event,

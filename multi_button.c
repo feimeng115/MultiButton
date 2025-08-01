@@ -120,6 +120,9 @@ static void button_handler(struct Button* handle)
 			} else if(handle->repeat == 2) {
 				handle->event = (uint8_t)DOUBLE_CLICK;
 				EVENT_CB(DOUBLE_CLICK); // repeat hit
+			} else if(handle->repeat == 5) {
+				handle->event = (uint8_t)FIVE_CLICK;
+				EVENT_CB(FIVE_CLICK); // repeat hit
 			}
 			handle->state = 0;
 		}
